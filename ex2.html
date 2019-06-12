@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function countWords(str) {
+        let regexp = /\s/g;
+        let result = str.match(regexp);
+        return  result.length+1;
+    }
+    console.log(countWords("Dao Nhu Anh"));
+</script>
+</body>
+</html>

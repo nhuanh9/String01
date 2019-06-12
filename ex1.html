@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isTime(str) {
+        let regexp = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    console.log(isTime("10/04/1999"));
+    console.log(isTime("(a8)-(22222222)"));
+</script>
+</body>
+</html>

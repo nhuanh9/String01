@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function countNA(str) {
+        let regexp = /[ueoai]/g;
+        let result = str.match(regexp);
+        return  result.length+1;
+    }
+    function countPA(str) {
+        let regexp = /[^ueoai]/g;
+        let result = str.match(regexp);
+        return  result.length+1;
+    }
+    console.log(countNA("Dao Nhu Anh"));
+    console.log(countPA("Dao Nhu Anh"));
+</script>
+</body>
+</html>
